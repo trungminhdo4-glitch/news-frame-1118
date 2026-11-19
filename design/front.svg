@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- News Frame 18-11: one-page summary of the world's news of Wednesday 18 November 2026.
+       Every shape here is drawn by hand in SVG; no photos, logos or fonts are embedded. -->
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d5f86"/>
+      <stop offset="1" stop-color="#143f5c"/>
+    </linearGradient>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="1" stop-color="#1b2350"/>
+    </linearGradient>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3b562"/>
+      <stop offset="1" stop-color="#e98a4a"/>
+    </linearGradient>
+    <linearGradient id="rain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#55606e"/>
+      <stop offset="1" stop-color="#7d8794"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ff4b3e"/>
+    </marker>
+  </defs>
+
+  <!-- paper -->
+  <rect width="1024" height="1024" fill="#f4efe4"/>
+
+  <!-- ===== MASTHEAD ===== -->
+  <rect x="0" y="0" width="1024" height="118" fill="#14213d"/>
+  <text x="32" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="4" fill="#fca311">THE WORLD'S NEWS IN ONE PICTURE</text>
+  <text x="30" y="96" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#ffffff">Wednesday, 18 November 2026</text>
+  <text x="992" y="38" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#c9d1e3">as reported that day</text>
+
+  <!-- ===== LEAD: GULF ===== -->
+  <g>
+    <rect x="24" y="134" width="560" height="420" rx="6" fill="url(#sea)"/>
+    <!-- Iran: north and east shore of the Gulf -->
+    <path d="M24 134 L584 134 L584 420 C560 410 540 392 520 395 C500 398 488 382 470 360 C452 338 430 330 410 318 C385 303 365 280 340 262 C318 246 300 236 280 222 C262 210 246 200 232 192 C218 184 205 178 196 168 C190 160 186 150 184 134 Z" fill="#c8b48a"/>
+    <!-- Iraq / Kuwait corner, Arabian shore -->
+    <path d="M24 134 L184 134 C178 150 170 162 160 172 C150 182 146 196 150 210 C154 222 150 236 156 248 C164 262 176 272 190 286 C205 300 214 318 222 336 C232 358 250 372 262 392 C272 408 290 420 310 430 C330 440 352 446 372 456 C396 468 420 476 446 482 C470 488 500 492 528 500 C548 506 566 516 584 530 L584 554 L24 554 Z" fill="#e3d3ae"/>
+    <!-- Qatar peninsula -->
+    <path d="M300 430 C296 410 302 392 316 386 C330 382 338 398 336 418 C334 434 322 446 310 444 Z" fill="#e3d3ae"/>
+    <!-- Bahrain island -->
+    <ellipse cx="282" cy="388" rx="7" ry="12" fill="#e3d3ae" stroke="#14213d" stroke-width="1.5"/>
+    <!-- Qeshm island in the Strait of Hormuz -->
+    <ellipse cx="500" cy="378" rx="22" ry="6" transform="rotate(-18 500 378)" fill="#c8b48a" stroke="#14213d" stroke-width="1.5"/>
+    <!-- border hint Kuwait / Saudi -->
+
+    <!-- country labels -->
+    <text x="420" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="6" fill="#5b4a2b">IRAN</text>
+    <text x="70" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3" fill="#7a6845">SAUDI ARABIA</text>
+    <text x="318" y="466" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#7a6845">QATAR</text>
+
+    <!-- Kuwait target -->
+    <circle cx="126" cy="232" r="22" fill="none" stroke="#ff4b3e" stroke-width="3"/>
+    <circle cx="126" cy="232" r="9" fill="#ff4b3e"/>
+    <rect x="40" y="266" width="170" height="40" rx="4" fill="#14213d"/>
+    <text x="50" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" fill="#fff">KUWAIT</text>
+    <text x="50" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#fca311">Ali Al Salem Air Base</text>
+
+    <!-- Bahrain target -->
+    <circle cx="282" cy="388" r="22" fill="none" stroke="#ff4b3e" stroke-width="3"/>
+    <rect x="150" y="364" width="104" height="26" rx="4" fill="#14213d"/>
+    <text x="160" y="383" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" fill="#fff">BAHRAIN</text>
+
+    <!-- Qeshm label -->
+    <text x="452" y="410" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213d">Qeshm Is.</text>
+    <text x="440" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#14213d">US strike, 17 Nov</text>
+
+    <!-- drone tracks from Iran -->
+    <path d="M330 220 C260 170 190 190 146 224" stroke="#ff4b3e" stroke-width="4" stroke-dasharray="10 7" fill="none" marker-end="url(#arrow)"/>
+    <path d="M380 300 C350 320 320 350 300 376" stroke="#ff4b3e" stroke-width="4" stroke-dasharray="10 7" fill="none" marker-end="url(#arrow)"/>
+    <!-- drones -->
+    <g fill="#14213d">
+      <path d="M236 182 l14 -4 l-4 6 l10 2 l-10 2 l4 6 l-14 -4 z"/>
+      <path d="M346 330 l12 -8 l-2 7 l9 -1 l-8 5 l6 4 l-14 0 z"/>
+    </g>
+    <text x="40" y="540" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#3b4a5e">Schematic map, not to scale</text>
+  </g>
+
+  <!-- lead text -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="604" y="166" font-size="17" font-weight="800" letter-spacing="3" fill="#d62828">GULF WAR WIDENS</text>
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" fill="#14213d">
+      <tspan x="602" y="212">Iran fires drones</tspan>
+      <tspan x="602" y="256">at US base in</tspan>
+      <tspan x="602" y="300">Kuwait, attacks</tspan>
+      <tspan x="602" y="344">Bahrain</tspan>
+    </text>
+    <g font-size="18" fill="#22303f">
+      <circle cx="610" cy="384" r="4" fill="#d62828"/>
+      <text><tspan x="622" y="390">Target: Ali Al Salem Air Base,</tspan><tspan x="622" y="413">which hosts US forces</tspan></text>
+      <circle cx="610" cy="440" r="4" fill="#d62828"/>
+      <text><tspan x="622" y="446">Bahrain intercepts attacks,</tspan><tspan x="622" y="469">tells residents to shelter</tspan></text>
+      <circle cx="610" cy="496" r="4" fill="#d62828"/>
+      <text><tspan x="622" y="502">Seen as retaliation for US</tspan><tspan x="622" y="525">strike on Qeshm Island</tspan></text>
+    </g>
+    <text x="622" y="550" font-size="15" font-style="italic" fill="#5a6573">US reissues Gulf security warnings</text>
+  </g>
+
+  <line x1="24" y1="572" x2="1000" y2="572" stroke="#14213d" stroke-width="3"/>
+
+  <!-- ===== PANEL A: APEC SHENZHEN ===== -->
+  <g>
+    <rect x="24" y="588" width="312" height="190" rx="6" fill="url(#dusk)"/>
+    <!-- skyline -->
+    <g fill="#b35d2e">
+      <rect x="34" y="650" width="26" height="80"/><rect x="64" y="630" width="20" height="100"/>
+      <rect x="88" y="660" width="30" height="70"/><rect x="250" y="640" width="24" height="90"/>
+      <rect x="278" y="612" width="18" height="118"/><path d="M287 612 l0 -18" stroke="#b35d2e" stroke-width="3"/>
+      <rect x="300" y="656" width="28" height="74"/>
+    </g>
+    <!-- tarmac -->
+    <rect x="24" y="730" width="312" height="48" fill="#5b5f66"/>
+    <path d="M24 756 L336 756" stroke="#f4efe4" stroke-width="3" stroke-dasharray="18 12"/>
+    <!-- plane -->
+    <g fill="#f4efe4" stroke="#14213d" stroke-width="2">
+      <path d="M120 712 L250 712 C262 712 268 718 268 722 C268 726 262 730 250 730 L120 730 C112 730 106 726 106 721 C106 716 112 712 120 712 Z"/>
+      <path d="M170 712 L150 680 L166 680 L198 712 Z"/>
+      <path d="M118 712 L106 690 L116 690 L132 712 Z"/>
+    </g>
+    <!-- stairs -->
+    <path d="M226 730 L252 766" stroke="#14213d" stroke-width="5"/>
+    <!-- two figures shaking hands -->
+    <g fill="#14213d">
+      <circle cx="268" cy="726" r="7"/><rect x="261" y="734" width="14" height="30" rx="5"/>
+      <circle cx="304" cy="726" r="7"/><rect x="297" y="734" width="14" height="30" rx="5"/>
+      <path d="M273 744 L299 744" stroke="#14213d" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <text x="36" y="616" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#14213d">APEC · SHENZHEN</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" fill="#14213d">
+      <tspan x="24" y="812">Xi greets Trump</tspan><tspan x="24" y="844">on the tarmac</tspan>
+    </text>
+    <text font-size="16" fill="#22303f"><tspan x="24" y="872">Trump lands for APEC; Putin meets Xi;</tspan><tspan x="24" y="892">Trump–Xi–Putin talks set for Thursday</tspan></text>
+  </g>
+
+  <!-- ===== PANEL B: VOYAGER ===== -->
+  <g>
+    <rect x="356" y="588" width="312" height="190" rx="6" fill="url(#space)"/>
+    <g fill="#ffffff" opacity="0.8">
+      <circle cx="380" cy="610" r="1.5"/><circle cx="420" cy="700" r="1.2"/><circle cx="470" cy="620" r="1.6"/>
+      <circle cx="520" cy="760" r="1.2"/><circle cx="560" cy="640" r="1.4"/><circle cx="610" cy="730" r="1.6"/>
+      <circle cx="650" cy="606" r="1.2"/><circle cx="400" cy="760" r="1.4"/><circle cx="590" cy="690" r="1"/>
+      <circle cx="455" cy="745" r="1"/><circle cx="640" cy="760" r="1.3"/><circle cx="500" cy="602" r="1"/>
+    </g>
+    <!-- Earth -->
+    <circle cx="392" cy="704" r="18" fill="#3a86c8"/>
+    <path d="M382 694 c6 -4 12 0 10 6 c-2 6 6 8 4 14 c-6 2 -14 -2 -16 -8 z" fill="#7cc36b"/>
+    <!-- light path -->
+    <path d="M414 704 L560 704" stroke="#fca311" stroke-width="3" stroke-dasharray="8 6"/>
+    <rect x="432" y="712" width="114" height="30" rx="4" fill="#fca311"/>
+    <text x="489" y="733" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#14213d">1 light-day</text>
+    <!-- Voyager probe: dish, bus, booms -->
+    <g stroke="#e8e8e8" stroke-width="3" fill="none">
+      <path d="M612 680 L654 650"/><path d="M612 704 L660 740"/><path d="M596 704 L640 704"/>
+    </g>
+    <path d="M572 668 C556 690 556 718 572 740 L590 704 Z" fill="#f4efe4" stroke="#14213d" stroke-width="2"/>
+    <rect x="588" y="694" width="26" height="20" fill="#c9a227" stroke="#14213d" stroke-width="2"/>
+    <circle cx="656" cy="648" r="5" fill="#d0d0d0"/>
+    <text x="368" y="616" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#fca311">SPACE</text>
+    <text x="654" y="770" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c9d1e3">signals take 24 hours</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" fill="#14213d">
+      <tspan x="356" y="812">Voyager 1 reaches</tspan><tspan x="356" y="844">one light-day out</tspan>
+    </text>
+    <text font-size="16" fill="#22303f"><tspan x="356" y="872">First spacecraft so far from Earth:</tspan><tspan x="356" y="892">about 25.9 billion km</tspan></text>
+  </g>
+
+  <!-- ===== PANEL C: GAZA / WEST BANK ===== -->
+  <g>
+    <rect x="688" y="588" width="312" height="190" rx="6" fill="url(#rain)"/>
+    <!-- rain -->
+    <g stroke="#cfd8e3" stroke-width="2" opacity="0.8">
+      <path d="M700 600 l-6 16"/><path d="M730 596 l-6 16"/><path d="M760 604 l-6 16"/><path d="M790 598 l-6 16"/>
+      <path d="M820 606 l-6 16"/><path d="M850 596 l-6 16"/><path d="M880 604 l-6 16"/><path d="M910 600 l-6 16"/>
+      <path d="M940 606 l-6 16"/><path d="M970 598 l-6 16"/><path d="M716 640 l-6 16"/><path d="M776 644 l-6 16"/>
+      <path d="M836 640 l-6 16"/><path d="M896 646 l-6 16"/><path d="M956 640 l-6 16"/><path d="M986 650 l-6 16"/>
+    </g>
+    <!-- tents -->
+    <g stroke="#14213d" stroke-width="2">
+      <path d="M708 730 L748 680 L788 730 Z" fill="#eae3d2"/>
+      <path d="M778 730 L826 670 L874 730 Z" fill="#d9cdb2"/>
+      <path d="M864 730 L904 684 L944 730 Z" fill="#eae3d2"/>
+      <path d="M930 730 L962 692 L994 730 Z" fill="#d9cdb2"/>
+    </g>
+    <!-- flood water -->
+    <path d="M688 724 C720 716 750 732 782 724 C814 716 846 732 878 724 C910 716 942 732 974 724 L1000 722 L1000 772 C1000 776 996 778 994 778 L694 778 C690 778 688 776 688 772 Z" fill="#4f7ea8" opacity="0.92"/>
+    <path d="M700 748 C730 742 760 754 790 748 M830 754 C860 748 890 760 920 754" stroke="#a8c6e0" stroke-width="2" fill="none"/>
+    <!-- aid box -->
+    <rect x="938" y="616" width="46" height="34" fill="#f4efe4" stroke="#14213d" stroke-width="2"/>
+    <text x="961" y="639" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#d62828">AID</text>
+    <text x="700" y="616" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#ffffff">GAZA · WEST BANK</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" fill="#14213d">
+      <tspan x="688" y="812">Floods hit Gaza;</tspan><tspan x="688" y="844">WHO: let aid in</tspan>
+    </text>
+    <text font-size="16" fill="#22303f"><tspan x="688" y="872">UK sanctions 8 West Bank settlement</tspan><tspan x="688" y="892">builders; Australia adds sanctions</tspan></text>
+  </g>
+
+  <!-- ===== TICKER ===== -->
+  <rect x="0" y="914" width="1024" height="110" fill="#14213d"/>
+  <rect x="24" y="930" width="74" height="26" rx="3" fill="#fca311"/>
+  <text x="61" y="949" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" fill="#14213d">ALSO</text>
+  <text x="112" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#ffffff">Myanmar to review its ties with ASEAN  ·  Rubio: no "imminent threat" to</text>
+  <text x="112" y="976" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#ffffff">Washington from reported Iranian plot  ·  US–Iran talks stall over Hormuz</text>
+  <text x="24" y="1008" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9aa6bd">Sources: AP, Anadolu Agency, Democracy Now!, Times of Israel, EarthSky — reports of 18 Nov 2026. Illustrations drawn in code; no photos.</text>
+</svg>
